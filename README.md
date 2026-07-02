@@ -14,12 +14,14 @@ GitHub Pagesでの公開を想定しています。
 | `assets/js/main.js` | 最小限のJavaScript（スマホ用ナビゲーションの開閉、フッターの年表示）。 |
 | `404.html` | 存在しないページにアクセスした際の案内ページ。 |
 | `robots.txt` | クローラー向けの最小設定。 |
-| `sitemap.xml` | サイトマップ（公開URL確定後に要確認）。 |
+| `sitemap.xml` | サイトマップ。 |
 
 ## 公開URLについて
 
-現時点では `https://ptaorg.com/` を想定URLとして `robots.txt` および `sitemap.xml` に記載しています。
-公開URLが確定した際は、`sitemap.xml` と `robots.txt` の記載内容を必ず確認し、必要に応じて修正してください。
+当面は `https://ptaorg.com/v2/` を次期版・試験公開用URLとして扱います。
+そのため、`robots.txt` および `sitemap.xml` も `/v2/` 配下での公開を前提に記載しています。
+
+本番化して `https://ptaorg.com/` 直下へ移行する場合は、`sitemap.xml`、`robots.txt`、`404.html`、必要に応じて各ページ内のURLを再確認し、公開URLに合わせて再調整してください。
 
 ## 今後追加すべきページ候補
 
