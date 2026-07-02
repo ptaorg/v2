@@ -9,7 +9,10 @@
   --color-border: #d7dbe2;
   --color-text: #202430;
   --color-text-soft: #4a4f5c;
-  --max-width: 760px;
+  --color-issue: #16233f;
+  --color-caution: #9a6500;
+  --color-check: #1f6b4b;
+  --max-width: 780px;
 }
 
 * {
@@ -26,7 +29,7 @@ body {
   background: var(--color-bg);
   color: var(--color-text);
   font-family: "Hiragino Sans", "Yu Gothic", "Noto Sans JP", "Meiryo", sans-serif;
-  line-height: 1.9;
+  line-height: 1.92;
   font-size: 16px;
 }
 
@@ -102,11 +105,11 @@ img {
 .content {
   max-width: var(--max-width);
   margin: 0 auto;
-  padding: 2.5rem 1.25rem 3rem;
+  padding: 2.75rem 1.25rem 3.25rem;
 }
 
 .lead h1 {
-  font-size: 1.55rem;
+  font-size: 1.62rem;
   line-height: 1.6;
   margin: 0 0 1.5rem;
   color: var(--color-navy);
@@ -117,13 +120,13 @@ img {
 }
 
 .section {
-  margin-top: 3rem;
-  padding-top: 0.5rem;
+  margin-top: 3.25rem;
+  padding-top: 0.7rem;
   border-top: 1px solid var(--color-border);
 }
 
 .section h2 {
-  font-size: 1.2rem;
+  font-size: 1.22rem;
   color: var(--color-navy);
   margin: 0 0 1.25rem;
 }
@@ -132,11 +135,87 @@ img {
   margin: 0 0 1.1rem;
 }
 
+/* 基本立場の宣言枠 */
+
+.stance-block {
+  margin-top: 1.75rem;
+  padding: 1.2rem 1.3rem;
+  background: var(--color-bg-soft);
+  border: 1px solid var(--color-border);
+  border-left: 5px solid var(--color-navy);
+  border-radius: 4px;
+}
+
+.stance-block p {
+  margin: 0 0 0.95rem;
+}
+
+.stance-block p:last-child {
+  margin-bottom: 0;
+}
+
+.stance-block .label {
+  font-weight: 700;
+  color: var(--color-navy);
+  margin-bottom: 0.7rem;
+}
+
 /* 左線つきの論点枠 */
 
 .point-block {
   border-left: 4px solid var(--color-navy);
   padding: 0.25rem 0 0.25rem 1.1rem;
+}
+
+/* 論点・注意・点検の補助枠 */
+
+.frame-block {
+  margin-top: 1.25rem;
+  padding: 0.95rem 1.1rem;
+  background: #fff;
+  border: 1px solid var(--color-border);
+  border-left-width: 5px;
+  border-left-style: solid;
+  border-radius: 4px;
+}
+
+.frame-block p {
+  margin: 0 0 0.75rem;
+}
+
+.frame-block p:last-child {
+  margin-bottom: 0;
+}
+
+.frame-title {
+  font-weight: 700;
+  letter-spacing: 0.04em;
+}
+
+.frame-issue {
+  border-left-color: var(--color-issue);
+}
+
+.frame-issue .frame-title {
+  color: var(--color-issue);
+}
+
+.frame-caution {
+  border-left-color: var(--color-caution);
+  background: #fffaf0;
+}
+
+.frame-caution .frame-title {
+  color: var(--color-caution);
+}
+
+.frame-check {
+  border-left-color: var(--color-check);
+  background: #f5fbf8;
+}
+
+.frame-check .frame-title {
+  color: var(--color-check);
 }
 
 /* 注記枠 */
@@ -214,6 +293,12 @@ img {
 
   .section h2 {
     font-size: 1.1rem;
+  }
+
+  .stance-block,
+  .frame-block,
+  .note-block {
+    padding: 0.9rem 1rem;
   }
 
   body {
