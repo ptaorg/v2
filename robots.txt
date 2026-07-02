@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://ptaorg.com/sitemap.xml
+Sitemap: https://ptaorg.com/v2/sitemap.xml
