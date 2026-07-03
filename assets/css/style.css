@@ -218,6 +218,28 @@ img {
   color: var(--color-check);
 }
 
+/* 記事ページのパンくず */
+
+.breadcrumb {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 1rem 1.25rem 0;
+  font-size: 0.85rem;
+  color: var(--color-text-soft);
+}
+
+.breadcrumb a {
+  color: var(--color-text-soft);
+  text-decoration: underline;
+}
+
+/* 本文後の補助導線リンク */
+
+.section-more {
+  margin-top: 1rem;
+  font-size: 0.92rem;
+}
+
 /* 注記枠 */
 
 .note-block {
