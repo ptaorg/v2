@@ -1,0 +1,109 @@
+/* PTA適正化推進委員会 書式ページ 共通スタイル */
+
+.form-sheet {
+  margin-top: 2.5rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid var(--color-border);
+}
+
+.form-date-line {
+  text-align: right;
+  margin: 0 0 1.5rem;
+}
+
+.form-addressee {
+  font-size: 1.1rem;
+  margin: 0 0 2rem;
+}
+
+.form-title {
+  text-align: center;
+  font-size: 1.5rem;
+  color: var(--color-navy);
+  margin: 0 0 2rem;
+  letter-spacing: 0.1em;
+}
+
+.form-subtitle {
+  font-size: 1.05rem;
+  color: var(--color-navy);
+  margin: 2rem 0 1rem;
+}
+
+.form-numbered-list {
+  padding-left: 1.4rem;
+  margin: 0 0 1.5rem;
+}
+
+.form-numbered-list li {
+  margin-bottom: 0.85rem;
+}
+
+.form-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 0 0 1.5rem;
+}
+
+.form-table th,
+.form-table td {
+  border: 1px solid var(--color-border);
+  padding: 0.75rem 0.9rem;
+  text-align: left;
+  vertical-align: top;
+}
+
+.form-table th {
+  width: 9.5rem;
+  background: var(--color-bg-soft);
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+.form-cell-tall {
+  height: 4.5rem;
+}
+
+.form-cell-signature {
+  text-align: right;
+}
+
+.form-table-signer {
+  margin-top: 2.5rem;
+}
+
+.form-note {
+  font-size: 0.9rem;
+  color: var(--color-text-soft);
+}
+
+.print-button {
+  background: var(--color-navy);
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  padding: 0.6rem 1.2rem;
+  font-size: 0.95rem;
+  cursor: pointer;
+}
+
+.print-button:hover {
+  background: var(--color-navy-light);
+}
+
+@media print {
+  .no-print {
+    display: none !important;
+  }
+
+  .form-sheet {
+    border-top: none;
+    margin-top: 0;
+    padding-top: 0;
+  }
+
+  .content {
+    max-width: none;
+    padding: 0;
+  }
+}
