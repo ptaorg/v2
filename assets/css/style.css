@@ -29,8 +29,9 @@ body {
   background: var(--color-bg);
   color: var(--color-text);
   font-family: "Hiragino Sans", "Yu Gothic", "Noto Sans JP", "Meiryo", sans-serif;
-  line-height: 1.92;
-  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.76;
+  font-size: 17px;
 }
 
 a {
@@ -126,9 +127,9 @@ img {
 }
 
 .section h2 {
-  font-size: 1.22rem;
+  font-size: 1.4rem;
   color: var(--color-navy);
-  margin: 0 0 1.25rem;
+  margin: 0.5rem 0 1.25rem;
 }
 
 .section p {
@@ -218,6 +219,18 @@ img {
   color: var(--color-check);
 }
 
+/* 出典注記 */
+
+.source-note {
+  font-size: 0.88rem;
+  color: var(--color-text-soft);
+  margin: -0.3rem 0 1.1rem;
+}
+
+.source-note a {
+  word-break: break-all;
+}
+
 /* 注記枠 */
 
 .note-block {
@@ -264,7 +277,7 @@ img {
 
 /* スマホ対応 */
 
-@media (max-width: 640px) {
+@media (max-width: 880px) {
   .content {
     padding: 2rem 1rem 2.5rem;
   }
